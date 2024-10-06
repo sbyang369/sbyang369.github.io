@@ -1,1 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophia Yang's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .resume-columns {
+            display: flex;
+            justify-content: space-between; /* Aligns columns to the left and right */
+            margin-top: 20px; /* Space above the columns */
+        }
+
+        .resume-column {
+            flex: 1; /* Each column takes equal width */
+            margin: 0 10px; /* Space between the columns */
+        }
+
+        .timeline {
+            list-style-type: none; /* Removes bullet points */
+            padding: 0; /* Removes padding */
+        }
+
+        .timeline li {
+            margin-bottom: 15px; /* Spacing between list items */
+        }
+
+        h3 {
+            border-bottom: 2px solid #ccc; /* Optional underline for section titles */
+            padding-bottom: 5px; /* Spacing below the title */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <button data-section="#home">Home</button>
+            <button data-section="#about">About Me</button>
+            <button data-section="#portfolio">Portfolio</button>
+            <button data-section="#resume">Resume</button>
+        </nav>
+    </header>
+
+    <section id="home" class="section home">
+        <div class="home-content">
+            <div class="home-intro">
+                <h1 class="typing-text">
+                    Hello world!<span class="typing-cursor">|</span>
+                </h1>
+                <h2>I'm Sophia Yang.</h2>
+                <p>I'm an aspiring software engineer from Georgia passionate about STEM advocacy.</p>
+            </div>
+            <button class="scroll-down" data-section="#about">Scroll to About Me</button>
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <div class="photo-area">
+                <img src="Images/websitephoto.jpg" alt="Sophia Yang" />
+            </div>
+            <div class="intro-area">
+                <p> Hihi! My name is Sophia and I'm a high school sophomore at Douglas County High School. (talk about my passion for stem awareness and advocacy, include tss and the red cross for advocacy) </p>
+            </div>
+        </div>
+        <button class="scroll-down" data-section="#portfolio">Scroll to Portfolio</button>
+    </section>
+
+    <section id="portfolio" class="section portfolio">
+        <h2 class="portfolio-title">Portfolio</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-item">
+                <iframe src="https://www.youtube.com/embed/sample1" title="Video 1" allowfullscreen></iframe>
+                <h3>CanineCare</h3>
+                <p>An AI-powered breast tumor detection app for dogs</p>
+                <!-- Added button to open slideshow -->
+                <a href="https://docs.google.com/presentation/d/1p9VA7qQKJgSfT7jEoT-d7_qPm99fXnlLCtT91ei8wfY/edit#slide=id.g20f814f55fa_0_0" target="_blank">
+                    <button>Open Slideshow</button>
+                </a>
+            </div>
+            <div class="portfolio-item">
+                <iframe src="https://www.youtube.com/embed/sample2" title="Video 2" allowfullscreen></iframe>
+                <h3>TSS Submission Tracker</h3>
+                <p>A submission tracker for my STEM magazine</p>
+            </div>
+            <div class="portfolio-item">
+                <iframe src="https://www.youtube.com/embed/sample3" title="Video 3" allowfullscreen></iframe>
+                <h3>AgroArm - WIP</h3>
+                <p>A robotic arm that makes agriculture technology accessible to low-income farmers</p>
+            </div>
+        </div>
+        <button class="scroll-down" data-section="#resume">Scroll to Resume</button>
+    </section>
+    
+
+    <section id="resume" class="section resume">
+        <h2>Resume</h2>
+        <div class="resume-columns">
+            <div class="resume-column">
+                <h3>Experience</h3>
+                <ul class="timeline">
+                    <li>
+                        <h4>The STEM Spectrum</h4>
+                        <span>Founder & Editor in Chief | July 2023-Present</span>
+                        <p>Description of the role.</p>
+                    </li>
+                    <li>
+                        <h4>Harvard Undergraduate OpenBio Laboratory </h4>
+                        <span>Student Researcher | May 2024-August 2024</span>
+                        <p>Description of the role.</p>
+                    </li>
+                    <li>
+                        <h4>ThinkNeuro</h4>
+                        <span>Backend Development Intern | April 2024-Present</span>
+                        <p>Description of the role.</p>
+                    </li>   
+                    <li>
+                        <h4>Red Cross</h4>
+                        <span>Director of Outreach of the Georgia Statewide Club | August 2024-Present</span>
+                        <p>Description of the role.</p>
+                    </li>          
+                    <li>
+                        <h4>Red Cross</h4>
+                        <span>Mass Care HR Assistant, Youth Leadership Summit Committee, Youth Screener | December 2023-Present</span>
+                        <p>Description of the role.</p>
+                    </li>      
+               </ul>
+            </div>
+            <div class="resume-column">
+                <h3>Extracurriculars</h3>
+                <ul class="timeline">
+                    <li>
+                        <h4>Robotics</h4>
+                        <span> Captain & Head Programmer | August 2023-Present</span>
+                        <p>Description of the extracurricular activity.</p>
+                    </li>
+
+                    <li>
+                        <h4>Douglasville Community Tennis Camp</h4>
+                        <span> Co-Founder & Head Coach | June 2022-Present</span>
+                        <p>Description of the extracurricular activity.</p>
+                    </li>
+
+                    <li>
+                        <h4>Melodies That Matter</h4>
+                        <span> Founder & President | March 2024-Present</span>
+                        <p>Description of the extracurricular activity.</p>
+                    </li>
+
+                    <li>
+                        <h4>Asian Pacific Islander Alliance</h4>
+                        <span> Secretary | August 2024-Present</span>
+                        <p>Description of the extracurricular activity.</p>
+                    </li>
+
+                    <li>
+                        <h4>Health Occupational Students of America (HOSA) </h4>
+                        <span> Officer | August 2024-Present</span>
+                        <p>Description of the extracurricular activity.</p>
+                    </li>
+                    <!-- Add more extracurriculars here -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
